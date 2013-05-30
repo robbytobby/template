@@ -1,0 +1,16 @@
+.navbar.navbar-fluid-top
+  .navbar-inner
+    .container-fluid
+      %a.btn.btn-navbar(data-target=".nav-collapse" data-toggle="collapse")
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to 'YACHT', welcome_index_path, class: :brand
+      .container.nav-collapse
+        -if user_signed_in?
+          %ul.nav
+            %li= link_to t('.users'), users_path
+        .pull-right
+          .locale-switcher
+            = locale_switcher
+            = render :partial => 'layouts/sign_out'

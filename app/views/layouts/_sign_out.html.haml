@@ -1,0 +1,9 @@
+-if user_signed_in?
+  .dropdown.pull-right
+    %a.dropdown-toggle{data: {toggle: 'dropdown'}, href: '#' }
+      %i.icon-large.icon-user
+    %ul.dropdown-menu
+      %li= link_to t('.edit_my_data'), edit_user_path(current_user)
+      %li= link_to t('.change_password'), change_password_user_path(current_user)
+  = link_to destroy_user_session_path, :method => :delete, class: 'icon pull-right', title: t('.sign_out') do
+    %i.icon-large.icon-signout

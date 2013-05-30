@@ -1,0 +1,41 @@
+de:
+  activerecord:
+    models:
+      user: 'User'
+    attributes:
+      user:
+        email: 'E-Mail'
+        password: 'Passwort'
+        password_confirmation: 'Passwort Bestätigung'
+        first_name: 'Vorname'
+        last_name: 'Nachname'
+        full_name: 'Name'
+    errors:
+      format: "%{attribute} %{message}"
+      messages: &errors_messages
+        accepted: "muss akzeptiert werden"
+        blank: "muss ausgefüllt werden"
+        confirmation: "stimmt nicht mit der Bestätigung überein"
+        empty: "muss ausgefüllt werden"
+        equal_to: "muss genau %{count} sein"
+        even: "muss gerade sein"
+        exclusion: "ist nicht verfügbar"
+        greater_than: "muss größer als %{count} sein"
+        greater_than_or_equal_to: "muss größer oder gleich %{count} sein"
+        inclusion: "ist kein gültiger Wert"
+        invalid: "ist nicht gültig"
+        less_than: "muss kleiner als %{count} sein"
+        less_than_or_equal_to: "muss kleiner oder gleich %{count} sein"
+        not_a_number: "ist keine Zahl"
+        not_an_integer: "muss ganzzahlig sein"
+        odd: "muss ungerade sein"
+        record_invalid: ! 'Validierung fehlgeschlagen: %{errors}'
+        taken: "wird schon verwendet, muss aber einzigartig sein"
+        too_long: "ist zu lang (nicht mehr als %{count} Zeichen)"
+        too_short: "ist zu kurz (nicht weniger als %{count} Zeichen)"
+        wrong_length: "hat die falsche Länge (muss genau %{count} Zeichen haben)"
+      template:
+        body: ! 'Es traten Probleme mit den folgenden Feldern auf:'
+        header:
+          one: '1 Fehler verhinderte, dass dieser %{model} gespeichert werden konnte'
+          other: '%{count} Fehler verhinderten, dass dieser %{model} gespeichert werden konnte'

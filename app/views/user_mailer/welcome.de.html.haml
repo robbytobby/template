@@ -1,0 +1,9 @@
+%h1 Hallo #{@user.full_name},
+%p 
+  du erhälst diese E-Mail, weil für dich ein Account für die Online Urlaubs-Verwaltung der PC (kurz YACHT - Your Awsome Cool Holiday Tool) angelegt worden ist.
+  %br/
+  Dieses System dient dazu, Urlaubsanträge zu stellen (und hoffentlich bewilligt zu bekommen) und immer einen Überblick über die genehmigten Urlaube und die noch verbliebenen Urlaubstage zu haben.
+%p 
+  Mit dieser E-Mail-Adresse und dem folgenden Passwort kannst du dich auf #{link_to 'YACHT', root_url} einloggen.
+%p Dein Passwort lautet: #{@user.password}
+%p nach dem einloggen

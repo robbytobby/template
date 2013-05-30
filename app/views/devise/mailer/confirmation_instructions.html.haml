@@ -1,0 +1,22 @@
+%p english version? See below!
+
+%h2 Hallo #{@user.full_name},
+%p 
+  du erhälst diese E-Mail, weil für dich ein Account für die Online Urlaubs-Verwaltung (kurz YACHT - Your Awsome Cool Holiday Tool) der PC angelegt worden ist.
+  %br/
+  Dieses System dient dazu, Urlaubsanträge zu stellen (und hoffentlich bewilligt zu bekommen) und immer einen Überblick über die genehmigten Urlaube und die noch verbliebenen Urlaubstage zu haben.
+%p Um deinen Account zu aktivieren klicke bitte den folgenden Link und setze ein Passwort
+%p= link_to 'Account aktivieren', confirmation_url(@resource, :confirmation_token => @resource.confirmation_token, locale: 'de')
+%p Danach kannst du dich mit deine E-Mail-Adresse und deinem Passwort auf #{link_to 'YACHT', root_url(locale: 'de')} und deinen Urlaub planen.
+
+%hr
+%h2 Hello #{@user.full_name},
+%p 
+  you receive this email, because an account for the online holiday management system (short YACHT - Your Awsome Cool Holiday Tool) has been created for you.
+  %br/
+  The purpose of the system is to manage your holiday requests (and hopefully get them approved) and to give you an overview of the approved holidays and the remaining holidays.
+%p To activate your account simply follow the link below and set your Password.
+%p= link_to 'Activate Account', confirmation_url(@resource, :confirmation_token => @resource.confirmation_token, locale: 'en')
+%p After activatiing your account, you can sign in at #{link_to 'YACHT', root_url(locale: 'en')} with your email and password and plan your holidays.
+
+

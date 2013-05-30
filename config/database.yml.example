@@ -1,0 +1,22 @@
+base: &base
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: 
+  password: 
+  host: localhost
+
+development:
+  <<: *base
+  database: yacht_development
+
+test: &test
+  <<: *base
+  database: yacht_test
+
+production:
+  <<: *base
+  database: yacht
+
+cucumber: 
+  <<: *test

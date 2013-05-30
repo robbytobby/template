@@ -1,0 +1,38 @@
+en:
+  buttons:
+    sign_in: 'Sign in'
+  flash:
+    notice: 
+      set_your_password_now: 'Please set your password first!'
+    error:
+      cant_delete_yourself: 'You cannot delete your own account'
+  helpers:
+    actions: 'actions'
+    confirm:
+      delete: "Are you sure, you want to delete %{model}"
+    links: 
+      back: 'back'
+      cancel: 'cancel'
+      destroy: 'delete'
+      edit: 'edit'
+      new: 'new'
+      create: 'create'
+    submit:
+      create: "create %{model}"
+      update: "save %{model}"
+    titles:
+      edit: 'Edit %{model}'
+  layouts:
+    navbar:
+      users: 'Users'
+    sign_out: 
+      sign_out: 'sign out'
+      edit_my_data: 'edit user data'
+      change_password: 'change password'
+  users:
+    change_password:
+      change_password: 'Change Password'
+    new:
+      title: 'New user'
+    
+      

@@ -1,0 +1,5 @@
+%p
+  Hallo #{@resource.full_name}!
+%p Dein Account wurde wegen zu vieler fehlgeschlagener Login-Versuche gesperrt.
+%p Klicke den folgenden Link um deinen Account zu entsperren: 
+%p= link_to 'Account entsperren', unlock_url(@resource, :unlock_token => @resource.unlock_token, locale: 'de')

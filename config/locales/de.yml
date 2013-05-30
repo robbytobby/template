@@ -1,0 +1,36 @@
+de:
+  buttons:
+    sign_in: 'anmelden'
+  flash:
+    notice: 
+      set_your_password_now: 'Bitte setze zuerst ein Passwort!'
+    error:
+      cant_delete_yourself: 'Du kannst dich nicht selbst löschen'
+  helpers:
+    actions: 'Aktionen'
+    confirm:
+      delete: "Bist du sicher, dass du %{model} löschen willst"
+    links: 
+      back: 'zurück'
+      cancel: 'abbrechen'
+      destroy: 'löschen'
+      edit: 'bearbeiten'
+      new: 'neu'
+      create: 'speichern'
+    submit:
+      create: "%{model} anlegen"
+      update: "%{model} speichern"
+    titles:
+      edit: '%{model} bearbeiten'
+  layouts:
+    navbar:
+      users: 'User'
+    sign_out: 
+      edit_my_data: 'User-Daten bearbeiten'
+      change_password: 'Passwort ändern'
+      sign_out: 'abmelden'
+  users:
+    change_password:
+      change_password: 'Passwort ändern'
+    new:
+      title: 'Neuer User'
